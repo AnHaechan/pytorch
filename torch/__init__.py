@@ -1926,6 +1926,9 @@ def compile(model: Optional[Callable] = None, *,
             return torch.sin(x) + torch.cos(x)
 
     """
+
+    print("Haechan instrumented this line.")
+
     _C._log_api_usage_once("torch.compile")
     if sys.version_info >= (3, 13):
         raise RuntimeError("Dynamo is not supported on Python 3.13+")

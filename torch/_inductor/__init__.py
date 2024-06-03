@@ -25,8 +25,6 @@ def compile(
     """
     from .compile_fx import compile_fx
 
-    print("Haechan instrumented this line.")
-
     return compile_fx(gm, example_inputs, config_patches=options)
 
 
